@@ -1,7 +1,7 @@
 #First project for Getting Data
 ##run_analysis.R - creating a tidy data set from wearable computing data.
 ###Introduction
-The purpose of run_analysis.R is to process the test and train data sets provided by the [UCI HAR study](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The processing provides a single output file that can be considered tidy on the basis that it:
+The purpose of run_analysis.R is to process the test and train data sets provided by the [UCI HAR study](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). The processing provides a single output file that can be considered tidy on the basis that:
 
 1. each variable forms a column (in this case, all features that represent a mean or standard deviation are included in their own column).
 2. each observation (in this case, each combination of subject and activity) forms a single row
