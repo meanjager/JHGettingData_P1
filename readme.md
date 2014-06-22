@@ -7,9 +7,9 @@ The purpose of run_analysis.R is to process the test and train data sets provide
 2. each observation (in this case, each combination of subject and activity) forms a single row
 3. each type of observational unit forms a table (run_analysis.R provides a table of the average of each variable for each combination of subject and activity). 
 
-This is the definition of tidy data from Hadley Wickham's paper, "Tidy Data" which can be found at, <vita.had.co.nz/papers/tidy-data.pdf>.
+This is the definition of tidy data from Hadley Wickham's paper, <"Tidy Data" which can be found at, <vita.had.co.nz/papers/tidy-data.pdf>.
 
-##Data processing
+###Data processing
 The script goes through a number of steps to process the data:
 
 1. Sets up a project folder to store data get a consistent working directory
@@ -32,3 +32,9 @@ The script goes through a number of steps to process the data:
 
 Since there are 30 subjects and 6 activites, there are 180 total commbinations. An average is taken of every mean or standard deviation measurement. The output is provided as a wide table that satisfies the definition of tidy data that was provided above.
  
+###Using the script
+The script can be run by sourcing it to the console. It does not require arguments. All data is stored as variables and items like the download location should be edited there (e.g. fileUrl and destFile in the body of execution). Once the data has been processed, the script will produce a file in the working directory called 'tidyOut-[DATE & TIME].txt'. This file can be loaded back into R using the following command:
+
+yourVar <- read.table(file="tidyOut-[date & time].txt",header=TRUE)
+
+You can then manipulate the data as you see fit.

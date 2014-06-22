@@ -88,7 +88,7 @@ conMgr <- function(fPath=NULL, file, conName, conList, action="open") {
                      return(file(paste(fPath, file, sep="")))},
             close = { close(conName) },
             closeall = { for(i in 1:length(conList)) { close(conList[i]) } },
-            create = { return(file(paste(fPath, "/", file, "-", Sys.time(), sep="")))
+            create = { return(file(paste(fPath, "/", file, "-", Sys.time(), ".", type, sep="")))
             })
 }
 
@@ -116,7 +116,7 @@ featCon <- conMgr(destDataDir, "/UCI HAR Dataset/features.txt", "featCon", conLi
 actDescCon <- conMgr(destDataDir, "/UCI HAR Dataset/activity_labels.txt", "actDescCon", conList=NULL, action="open" )
 featTab <- read.table(featCon)
 actDescTab <- read.table(actDescCon)
-tidyOut <- conMgr(getwd(), file="tidyOut", action="create")
+tidyOut <- conMgr(getwd(), file="tidyOut", action="create", type="txt")
 
 
 ## TEST TEST TEST 
