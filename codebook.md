@@ -1,6 +1,6 @@
 #JH Getting Data on Coursera
 ##Class Project - 21st June 2014
-##Matthew Povey - matt.povey@gmail.com
+##meanjager : meanjager@gmail.com (Matthew Povey)
 ###Variables
 * actDescTab : Table containing plain text descriptions of activities
 * comboMS : A subset of the concatenated test and train data containing only those columns which are means or standard deviations.
