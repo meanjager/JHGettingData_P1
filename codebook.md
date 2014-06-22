@@ -15,3 +15,14 @@
 * xTrnTab : A DF containgin The training data (X_train.txt)
 * xTstTab : A DF containing the test data (X_test.txt)
 
+###Functions
+A number of functions were created to keep the script tidy
+* conMgr : Provides an easy mechanism to open and close connections for use in other functions
+* fixActs : Replaces activity IDs with friendly names. Takes the table of activity descriptions and the table of activity mappings as arguments and returns a single table of activity mappings and friendly names.
+* setupProject : Ensures that a directory is availabe for the project and is created in a consistent way
+* xFileExist : Used to check whether the download already exists
+* xGetData : standardize grabbing data, unzipping and loading to objects
+
+###Original data
+The orginal data was from <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+A readme is included in the zip which describes the contents well.
