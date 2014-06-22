@@ -7,7 +7,7 @@ The purpose of run_analysis.R is to process the test and train data sets provide
 2. each observation (in this case, each combination of subject and activity) forms a single row
 3. each type of observational unit forms a table (run_analysis.R provides a table of the average of each variable for each combination of subject and activity). 
 
-This is the definition of tidy data from Hadley Wickham's paper, <"Tidy Data" which can be found at, <vita.had.co.nz/papers/tidy-data.pdf>.
+This is the definition of tidy data from Hadley Wickham's paper, ["Tidy Data"](http://<vita.had.co.nz/papers/tidy-data.pdf).
 
 ###Data processing
 The script goes through a number of steps to process the data:
