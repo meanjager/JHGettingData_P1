@@ -35,6 +35,6 @@ Since there are 30 subjects and 6 activites, there are 180 total commbinations. 
 ###Using the script
 The script can be run by sourcing it to the console. It does not require arguments. All data is stored as variables and items like the download location should be edited there (e.g. fileUrl and destFile in the body of execution). Once the data has been processed, the script will produce a file in the working directory called 'tidyOut-[DATE & TIME].txt'. This file can be loaded back into R using the following command:
 
-yourVar <- read.table(file="tidyOut-[date & time].txt",header=TRUE)
+`yourVar <- read.table(file="tidyOut-[date & time].txt",header=TRUE)`
 
 You can then manipulate the data as you see fit.
